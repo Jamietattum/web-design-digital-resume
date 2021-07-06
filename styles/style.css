@@ -1,0 +1,184 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* whole */
+#whole {
+    background-image: url("../background img/resumebackgr5.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 2000px;
+}
+
+/* The animation code */
+@keyframes headingsrotate {
+
+    0% {background-color:none;}
+    50% {
+            background-color : none;
+            border-radius: 100%;
+        }
+    100% {
+            background-color: none;
+            transform: rotate(20deg);
+            
+}
+    
+    }
+
+/* The element to apply the animation to */
+/*  h3 */
+ h3 {
+    text-align: center;
+    animation-name: headingsrotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+
+/* h1, h2*/
+h1, h2 {
+    text-align: center; 
+}
+
+/* wrapper */
+#wrapper {
+    min-width: 100vw;
+    display: inline-flex;
+}
+
+/* aside */
+aside {
+    width: 350px;
+    /*toprightbottomleft*/
+    margin: 20px auto;
+    /*top(leftandright)bottom*/
+    padding: 20px 10px 20px;
+    border: 5px solid white;
+}
+
+/* about */
+#about {
+    width: 400px;
+    /*top right bottom left */
+    margin: 20px auto;
+    /* top (left and right) bottom */
+    padding: 20px 10px 20px;
+    background-color: lightpink;
+    border: 5px solid white;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* details */
+#details {
+    width: 400px;
+    /*top right bottom left */
+    margin: 20px auto;
+    /* top (left and right) bottom */
+    padding: 20px 10px 20px;
+    background-color:lightpink;
+    border: 5px solid white;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* me */
+#me {
+    /*top right bottom left */
+    margin: 20px auto;
+    /* top (left and right) bottom */
+    padding: 20px 10px 20px;
+    background-color: palevioletred;
+    border: 5px solid white;
+    font-style: italic;
+}
+
+#left {
+    float: left;
+    background-color: lightpink;
+    margin-right: 10px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#center {
+    margin: auto;
+    background-color: plum;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#right {
+    float: right;
+    background-color: lightpink;
+    margin-left: 10px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+
+#profile {
+    width: 100%;
+    /*top right bottom left */
+    margin: 20px auto;
+    /* top (left and right) bottom */
+    padding: 20px 10px 20px;
+}
+
+/* The animation code */
+@keyframes profileimgborder {
+
+0% {
+        background-color:none;
+        transform: translateY(100px);
+}
+35% {
+        background-color : none;
+        border-radius: 100%;
+    }
+70% {
+    background-color: none;
+    transform: translateX(100px);
+    }
+100% {
+        background-color: palevioletred;
+}
+
+}
+
+/* The element to apply the animation to */
+#profile-img {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin: auto;;
+    border: 5px solid palevioletred;
+    animation-name: profileimgborder;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+
+@font-face {
+    
+    font-family: papyrusCondensed;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/Papyrus-Condensed.ttf);
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: normal;
+}
+
+@media (max-width: 800px) {
+    p {
+        font-size: large;
+    }
+}  
